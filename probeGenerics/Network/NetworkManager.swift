@@ -12,7 +12,7 @@ protocol Network {
                                   completionHandler: @escaping(T)-> ()) -> URLSessionDataTask
 }
 
-struct NetworkManager : Network {
+class NetworkManager : Network {
     
     func dataRecive<T : Decodable>(model: T.Type,url: String, completionHandler: @escaping (T) -> ()) {
         let postData = NSData(data: "".data(using: String.Encoding.utf8)!)

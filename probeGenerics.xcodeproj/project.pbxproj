@@ -12,6 +12,7 @@
 		6EBFCB45542DE4CE91530420 /* Pods_probeGenericsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7428AE21006FEBDC2F01195 /* Pods_probeGenericsTests.framework */; };
 		CE1895B525879217001BEBA2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1895B425879217001BEBA2 /* TableViewController.swift */; };
 		CE1895BD2587AB97001BEBA2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1895BC2587AB97001BEBA2 /* WebViewController.swift */; };
+		CE1895F32588F5CA001BEBA2 /* WorldNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1895F22588F5CA001BEBA2 /* WorldNews.swift */; };
 		CE771F7225872C9E0043CF0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE771F7125872C9E0043CF0C /* AppDelegate.swift */; };
 		CE771F7425872C9E0043CF0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE771F7325872C9E0043CF0C /* SceneDelegate.swift */; };
 		CE771F7925872C9E0043CF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE771F7725872C9E0043CF0C /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 		CE771FB9258737600043CF0C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE771FB8258737600043CF0C /* TableViewCell.swift */; };
 		CE771FBE2587395D0043CF0C /* ModelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE771FBD2587395D0043CF0C /* ModelInfo.swift */; };
 		CE771FC42587398B0043CF0C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE771FC32587398B0043CF0C /* NetworkManager.swift */; };
+		CE9CC6B72588F704009FCCD6 /* ModelNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CC6B62588F704009FCCD6 /* ModelNews.swift */; };
+		CE9CC6BF25892CB1009FCCD6 /* TableView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CC6BE25892CB1009FCCD6 /* TableView + Extension.swift */; };
 		CEB4FBE02587402D00809448 /* ModelInfoParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4FBDF2587402D00809448 /* ModelInfoParse.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,7 @@
 		C8E0CCED83E674488D065D5F /* Pods-probeGenerics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-probeGenerics.debug.xcconfig"; path = "Target Support Files/Pods-probeGenerics/Pods-probeGenerics.debug.xcconfig"; sourceTree = "<group>"; };
 		CE1895B425879217001BEBA2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CE1895BC2587AB97001BEBA2 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CE1895F22588F5CA001BEBA2 /* WorldNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldNews.swift; sourceTree = "<group>"; };
 		CE771F6E25872C9E0043CF0C /* probeGenerics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = probeGenerics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE771F7125872C9E0043CF0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE771F7325872C9E0043CF0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 		CE771FB8258737600043CF0C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CE771FBD2587395D0043CF0C /* ModelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInfo.swift; sourceTree = "<group>"; };
 		CE771FC32587398B0043CF0C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CE9CC6B62588F704009FCCD6 /* ModelNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNews.swift; sourceTree = "<group>"; };
+		CE9CC6BE25892CB1009FCCD6 /* TableView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView + Extension.swift"; sourceTree = "<group>"; };
 		CEB4FBDF2587402D00809448 /* ModelInfoParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInfoParse.swift; sourceTree = "<group>"; };
 		E416647F1319EAFC7261FA0F /* Pods-probeGenerics-probeGenericsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-probeGenerics-probeGenericsUITests.release.xcconfig"; path = "Target Support Files/Pods-probeGenerics-probeGenericsUITests/Pods-probeGenerics-probeGenericsUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +196,7 @@
 			children = (
 				CE771FB0258732CA0043CF0C /* Cell */,
 				CE771F7725872C9E0043CF0C /* Main.storyboard */,
+				CE9CC6BE25892CB1009FCCD6 /* TableView + Extension.swift */,
 				CE1895B425879217001BEBA2 /* TableViewController.swift */,
 				CE771F7F25872C9F0043CF0C /* LaunchScreen.storyboard */,
 				CE771F7A25872C9E0043CF0C /* probeGenerics.xcdatamodeld */,
@@ -211,6 +218,7 @@
 			children = (
 				CE771FC2258739760043CF0C /* Models */,
 				CE771FC32587398B0043CF0C /* NetworkManager.swift */,
+				CE1895F22588F5CA001BEBA2 /* WorldNews.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			children = (
 				CE771FBD2587395D0043CF0C /* ModelInfo.swift */,
 				CEB4FBDF2587402D00809448 /* ModelInfoParse.swift */,
+				CE9CC6B62588F704009FCCD6 /* ModelNews.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -477,8 +486,11 @@
 				CE771F7225872C9E0043CF0C /* AppDelegate.swift in Sources */,
 				CE771FC42587398B0043CF0C /* NetworkManager.swift in Sources */,
 				CEB4FBE02587402D00809448 /* ModelInfoParse.swift in Sources */,
+				CE1895F32588F5CA001BEBA2 /* WorldNews.swift in Sources */,
 				CE771FBE2587395D0043CF0C /* ModelInfo.swift in Sources */,
+				CE9CC6B72588F704009FCCD6 /* ModelNews.swift in Sources */,
 				CE771F7C25872C9E0043CF0C /* probeGenerics.xcdatamodeld in Sources */,
+				CE9CC6BF25892CB1009FCCD6 /* TableView + Extension.swift in Sources */,
 				CE1895B525879217001BEBA2 /* TableViewController.swift in Sources */,
 				CE771F7425872C9E0043CF0C /* SceneDelegate.swift in Sources */,
 			);
