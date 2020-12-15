@@ -5,13 +5,17 @@
 //  Created by User on 14.12.2020.
 //
 
+
+protocol Parse {
+    func parseInfo<T: Decodable>(model: T.Type ,data: Data, completionHandler: @escaping (T)->())
+}
+
 import Foundation
-class ModelInfoParse {
-    
-    func parseInfo (data : Data, completionHandler : @escaping (ModelInfo)->()) {
+class ModelInfoParse: Parse {
+    func parseInfo<T: Decodable>(model: T.Type ,data: Data, completionHandler: @escaping (T)->()) {
         let decoder = JSONDecoder()
         do {
-            let songs = try  decoder.decode(ModelInfo.self, from: data)
+            let songs = try  decoder.decode(model.self, from: data)
            completionHandler(songs)
         } catch {
             print (error.localizedDescription)

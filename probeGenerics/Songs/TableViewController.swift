@@ -41,7 +41,7 @@ class TableViewController: UITableViewController {
     func getdata(url: String) {
         labelLoading.isHidden = false
         activityIndicator.isHidden = false
-        networkManager.dataRecive(url: url) { [weak self] (responce) in
+        networkManager.dataRecive(model: ModelInfo.self, url: url) { [weak self] (responce) in
             guard let self = self else { return }
             DispatchQueue.main.sync {
                 self.modelSong = responce.feed.results
