@@ -19,13 +19,13 @@ class TableViewCell: UITableViewCell {
     
     var origin = Origin()
     
-    func configure(currentData: Result) {
+    func configure(currentData: Interface) {
         album.text = currentData.name
         author.text = currentData.artistName
         newImage.sd_setImage(with: URL(string: currentData.artworkUrl100 ?? origin.resetAddress), completed: nil)
     }
     
-    func newsCellConfigure(array: [Article], indexPath: IndexPath) {
+    func newsCellConfigure(array: [InterfaceNews], indexPath: IndexPath) {
         guard array.isEmpty == false else {return}
         let current = array[indexPath.row]
         album.text = current.title

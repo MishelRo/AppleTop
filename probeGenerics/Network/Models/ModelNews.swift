@@ -7,20 +7,27 @@
 
 import Foundation
 
+protocol InterfaceNews {
+    var source: Source? {get set}
+    var title: String? {get set}
+    var url: String {get set}
+    var urlToImage: String? {get set}
+}
+
 struct ModelNews : Decodable {
     let status: String
-    let totalResults: Int
+    let totalResults: Int 
     let articles: [Article]
 }
 
-struct Article : Decodable {
-    let source: Source?
-    let author: String?
-    let title: String?
-    let articleDescription: String?
-    let url: String
-    let urlToImage: String?
-    let content: String?
+struct Article : Decodable, InterfaceNews {
+    var source: Source?
+    var author: String?
+    var title: String?
+    var articleDescription: String?
+    var url: String
+    var urlToImage: String?
+    var content: String?
 }
 
 struct Source : Decodable {

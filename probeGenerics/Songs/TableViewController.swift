@@ -22,10 +22,10 @@ class TableViewController: UITableViewController {
     @IBOutlet weak var views: UIView!
     
     var networkManager = NetworkManager()
-    var article = [Article]()
+    var article = [InterfaceNews]()
     var worldNews = WorldNews()
     var source = Sources()
-    var modelSong = [Result]()
+    var modelSong = [Interface]()
     var TVC = TableViewCell()
     var url = ""
     

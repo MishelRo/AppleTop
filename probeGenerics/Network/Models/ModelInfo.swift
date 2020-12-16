@@ -5,6 +5,14 @@
 //  Created by User on 14.12.2020.
 //
 import Foundation
+protocol Interface {
+    var artistName : String? {get}
+    var name : String? {get}
+    var artistURL : String? {get}
+    var artworkUrl100 : String? {get}
+    var url: String? {get}
+    
+}
 
 // MARK: - Welcome
 struct ModelInfo: Codable {
@@ -17,7 +25,7 @@ struct Feed: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct Result: Codable, Interface {
     let artistName, id: String?
     let releaseDate: String?
     let name, collectionName: String?

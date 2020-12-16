@@ -19,7 +19,8 @@ extension TableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-        guard modelSong.first?.id != nil else { cell.newsCellConfigure(array: article, indexPath: indexPath);return cell}
+        guard modelSong.first?.name != nil else {
+        cell.newsCellConfigure(array: article, indexPath: indexPath);return cell}
         let currentData = modelSong[indexPath.row]
         cell.configure(currentData: currentData)
         return cell
@@ -31,9 +32,9 @@ extension TableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard modelSong.count > 0 else {
-            let currentData = article[indexPath.row]
-            url = currentData.url
-            performSegue(withIdentifier: "Go", sender: nil); return }
+        let currentData = article[indexPath.row]
+        url = currentData.url
+        performSegue(withIdentifier: "Go", sender: nil); return }
         let currentData = modelSong[indexPath.row]
         url = currentData.artistURL ?? source.unknownAdress
         performSegue(withIdentifier: "Go", sender: nil)
