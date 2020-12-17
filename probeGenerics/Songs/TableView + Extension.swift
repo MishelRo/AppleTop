@@ -18,7 +18,7 @@ extension TableViewController {
         return modelSong.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NewCell") as! NewTableViewCell
         guard modelSong.first?.name != nil else {
         cell.newsCellConfigure(array: article, indexPath: indexPath);return cell}
         let currentData = modelSong[indexPath.row]

@@ -15,6 +15,7 @@ struct Sources {
     var unknownAdress = "https://avatars.mds.yandex.net/get-zen_doc/1112006/pub_5b86796347174c00aab19fed_5b867969ecb00d00aa4a4701/scale_1200"
 }
 
+
 class TableViewController: UITableViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -26,7 +27,7 @@ class TableViewController: UITableViewController {
     var worldNews = WorldNews()
     var source = Sources()
     var modelSong = [Interface]()
-    var TVC = TableViewCell()
+//    var TVC = TableViewCell()
     var url = ""
     
     @IBAction func changeaction(_ sender: Any) {
@@ -39,7 +40,8 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         activityIndicator.startAnimating()
         getdata(url: source.top100App)
-        
+        let nib = UINib(nibName: "NewTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "NewCell")
     }
     
     func getNews () {
